@@ -44,8 +44,7 @@ class _LoginPageState extends State<LoginPage> {
 
       if (!mounted) return;
 
-      if (user != null) {
-        // simpan session
+      if (user != null) 
         await _prefsService.saveSession(user.username);
 
         if (!mounted) return;
